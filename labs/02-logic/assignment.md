@@ -30,7 +30,7 @@
 
         -- First test case
         s_b <= "0100"; -- Such as "0101" if ID = xxxx56
-        s_a <= "1001";        -- Such as "0110" if ID = xxxx56
+        s_a <= "1001"; -- Such as "0110" if ID = xxxx56
         wait for 100 ns;
         -- Expected output
         assert ((s_B_greater_A = 'WRITE_CORRECT_VALUE_HERE') and
