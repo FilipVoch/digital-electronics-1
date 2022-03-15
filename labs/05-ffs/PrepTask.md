@@ -1,13 +1,3 @@
- ![Characteristic equations](images/eq_flip_flops.png)
-   <!--
-   https://editor.codecogs.com/
-   \begin{align*}
-       q_{n+1}^D =&~D \\
-       q_{n+1}^{JK} =& \\
-       q_{n+1}^T =& \\
-   \end{align*}
-   -->
-
    **D-type FF**
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
