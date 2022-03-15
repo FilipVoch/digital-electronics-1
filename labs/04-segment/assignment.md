@@ -76,14 +76,23 @@
    -- Experiments on your own: LED(7:4) indicators
 
    -- Turn LED(4) on if input value is equal to 0, ie "0000"
-   -- LED(4) <= `0` when WRITE YOUR CODE HERE
+   LED(4) <= '0' when SW = "0000"; 
 
    -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
-   -- LED(5) <= WRITE YOUR CODE HERE
+   LED(5) <= '0' when SW > "1001";
 
    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-   -- LED(6) <= WRITE YOUR CODE HERE
+   if (SW mod 2) = 0 then 
+        LED(6) <= '1';
+    else
+        LED(6) <= '0';
+    end if;
 
    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
-   -- LED(7) <= WRITE YOUR CODE HERE
+   with SW select
+   LED(7) <= '0' when "0001",
+             '0' when "0010",
+             '0' when "0100",
+             '0' when "1000",
+             '1' when others;
    ```
