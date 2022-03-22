@@ -1,3 +1,4 @@
+![schema](images/Schematic.png)
 ![vzorce](images/Vzorce.png)
    | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
